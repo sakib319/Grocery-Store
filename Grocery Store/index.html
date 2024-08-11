@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apon Grocery Store</title>
+    <!--code for font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--code for font awesome cdn-->
+    <!--swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--swiper css-->
+    <!--code for linkinf css file-->
+    <link rel="stylesheet" href="style.css">
+    <!--code for font awesome cdn-->
+    
+
+
+</head>
+<body>
+    <!--Header sectiion-->
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>APON SUPER STORE</a>
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#feature">feature</a>
+    <a href="#products">products</a>
+    <a href="#categories">categories</a>
+    <a href="#review">review</a>
+    <a href="#blogs">blogs</a>
+    
+    
+</nav>
+<div class="icons">
+    <div class="fa fa-bars" id="menu-btn"></div>
+    <div class="fa fa-search" id="search-btn"></div>
+    <div  class="fa fa-shopping-cart" id="cart-btn"><span  id="badge">0</span></div>
+    <div class="fa fa-user" id="login-btn"></div>
+</div>
+<form class="search-form" action="">
+    <input type="search" name="search-box" id="search-box" placeholder="Search Here">
+    <label for="search-box" ><span id="searchme" class="fa fa-search"></span></label>
+</form>
+
+<div class="shopping-cart" id="shopping-cart">
+    
+
+    <div class="total">Total:TK <span id="total">00</span></div>
+    <a  class="btn">Checkout</a>
+    <a style="display:none" id="del" class="btn">Delete All</a>
+</div>
+
+<form action=""class="login-form">
+    <h3>Login Now</h3>
+    <input type="email" placeholder="your email" class="box">
+    <input type="password" placeholder="your password" class="box">
+    <p>Forget your password <a href="#">Click Here</a></p>
+    <p>Don't have an account? <a href="#">Create Now</a></p>
+    <input type="submit" class="btn"value="Login Now">
+
+
+</form>
+<div class="main">
+
+</div>
+</header>
+  <!--Header sectiion-->
+
+<!--Banner section starts here-->
+
+
+<main>
+<section id="home" class="home">
+ <div >
+    <img class="home-image" src="images/homeimageeeee1.jpeg" alt="">
+ </div>
+    <div class="content">
+        <h3>Fressh And <span>Organic </span> Product For You</h3>
+        <p>Looking for peak freshness?Explore our organic product section !Grown without synthetic chemicals,this fruits and vegies boast vibrant colors,richer flavors,and pack a healthy punch.Nourish your body with the goodness of nature.-choose organic today!</p>
+
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+    <div >
+        <img class="home-image" src="images/homeimage2.jpeg" alt="">
+     </div>
+       
+</section>
+
+<!--Banner section ends here-->
+<!--Feature Section Starts Here-->
+<setion class="features" id="feature">
+    <h2 class="heading">Our <span>Features</span></h2>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/organicfruit.png" alt="">
+            <h3>Fresh And Organic</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, neque praesentium. Ut, illo blanditiis labore veniam dolore ad non cum.</p>
+            <a href="#" class="btn">Read More</a>
+        </div> 
+        <div class="box">
+            <img src="images/freedelivery.png" alt="">
+            <h3>Free Delivery</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, neque praesentium. Ut, illo blanditiis labore veniam dolore ad non cum.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+         <div class="box">
+            <img src="images/easypayment.png" alt="">
+            <h3>Easy Payment</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, neque praesentium. Ut, illo blanditiis labore veniam dolore ad non cum.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+    </div>
+
+</setion>
+
+<!--Feature Section Starts Ends-->
+
+
+
+<!--product section starts starts here-->
+
+
+
+<section class="products" id="products">
+    <h3 class="heading">Our <span >Products</span></h3>
+    
+    <div class="product-slider">
+        <div class="wrapper">
+            <div class="box">
+
+                <img src="images/orange.png" alt="">
+                <h1 data-price="300">Fresh Orange</h1>
+               
+                <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    TK300/-(Per KG)
+                </div>
+
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div>
+                <a    data-add="not" class="addBtn btn">Add to Cart</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/mango.png" alt="">
+                <h1 data-price="150">Fresh Mango</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    TK150/-(Per KG)
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div>
+<a    data-add="not" class="addBtn btn">Add to Cart</a>
+
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/litchi.png" alt="">
+                <h1 data-price="250"> Fresh Litchi</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    TK250/(per kg)
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div><a   data-add="not" class="addBtn btn">Add to Cart</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/straberry.png" alt="">
+                <h1 data-price="400">Strawberry</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    TK400/-(Per Kg)
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div><a class="addBtn btn" data-add="not" >Add to Cart</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/dragon.png" alt="">
+                <h1 data-price="600">Dragon Fruit</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    Tk600/-(per kg)
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div><a  class="addBtn btn" data-add="not" >Add to Cart</a>
+            </div>
+
+        </div>
+    
+    </div>
+
+    
+    
+    <div class="product-slider">
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/soyabean oil.jpg" alt="">
+                <h1 data-price="200">Soyabean Oil</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    TK200/-(1 Litre)
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div><a   data-add="not" class="addBtn btn">Add to Cart</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/egg.jpg" alt="">
+                <h1 data-price="150">Egg</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    TK150/-(Per Dozen)
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div><a  class="addBtn btn" data-add="not" >Add to Cart</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/meat.png" alt="">
+                <h1 data-price="250">Meat</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    TK250/(per kg)
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div><a   class="addBtn btn" data-add="not">Add to Cart</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/chicken.jpg" alt="">
+                <h1 data-price="400">Chicken</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    TK400/-(Four Pieces)
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div><a   class="addBtn btn" data-add="not" >Add to Cart</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/hilsha.png" alt="">
+                <h1 data-price="600">Hilsha Fish</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    Tk600/-(per kg)
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div><a  class="addBtn btn" data-add="not" >Add to Cart</a>
+            </div>
+
+        </div>
+    
+    </div>
+
+    <div class="product-slider">
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/pranmilk.jpg" alt="">
+                <h1 data-price="100">Pran Milk</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    TK100/-(250g)
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div><a  class="addBtn btn" data-add="not" >Add to Cart</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/milk vita butter.jpg" alt="">
+                <h1 data-price="200">Milk Vita Butter</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    TK200/
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div><a   data-add="not" class="btn addBtn">Add to Cart</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/energybuscuit.jpg" alt="">
+                <h1 data-price="20">Energy Biscuits</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    TK20/-
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div>
+                <a    data-add="not"class="btn addBtn">Add to cart</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/biscuit.jpg" alt="">
+                <h1 data-price="100">Lexus Biscuit</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    TK100/-
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div><a    data-add="not" class="btn addBtn">Add to Cart</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/drycake.jpg" alt="">
+                <h1 data-price="120">Dry Cake</h1>
+                 <div class="qty">
+                    
+                    <button class="increase">-</button>
+                    <button id="quantity">1</button>
+                    <button class="decrease">+</button>
+                    </div>
+
+                <div class="price">
+                    Tk120/-
+                </div>
+                
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+
+                    
+                </div><a    data-add="not" class=" addBtn btn">Add to Cart</a>
+            </div>
+
+        </div>
+    
+    </div>
+
+</section>
+
+<!--product sectiion Ends Here-->
+
+
+<section class="categories" id="categories">
+    <h1 class="heading">Product <span>Catergories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="/images/cat1.jpg" alt="">
+            <h3>Vegetables</h3>
+            <p>Upto 45% off</p>
+            <a href="#" class="btn">Shop Now</a>
+
+        </div>
+        <div class="box">
+            <img src="images/cat2.jpg" alt="">
+            <h3>Fresh Fruits</h3>
+            <p>Upto 45% off</p>
+            <a href="#" class="btn">Shop Now</a>
+
+        </div>
+        <div class="box">
+            <img src="images/cat3.jpg" alt="">
+            <h3>Dairy Product</h3>
+            <p>Upto 45% off</p>
+            <a href="#" class="btn">Shop Now</a>
+
+        </div>
+        <div class="box">
+            <img src="images/cat4.jpg" alt="">
+            <h3>Fresh Meat</h3>
+            <p>Upto 45% off</p>
+            <a href="#" class="btn">Shop Now</a>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+</section>
+<!--categories Section Ends Here-->
+
+<section class="review" id="review">
+<h1 class="heading" >Customer's <span>Review</span></h1>
+<div class="review-slider swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide box">
+            <img src="images/sakib.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis modi quos obcaecati. Repudiandae in doloremque molestias iusto amet. Expedita, id.
+                
+            </p>
+            <h3>Sakib Hossen</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="images/viratkohli.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis modi quos obcaecati. Repudiandae in doloremque molestias iusto amet. Expedita, id.
+                
+            </p>
+            <h3>Virat Kohli</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                
+            </div>
+        </div>
+        <div class="swiper-slide box">
+            <img src="images/sakib al hassan.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis modi quos obcaecati. Repudiandae in doloremque molestias iusto amet. Expedita, id.
+                
+            </p>
+            <h3>Sakib Al Hassan</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                
+            </div>
+        </div>
+        <div class="swiper-slide box">
+            <img src="images/Shahid Afridi.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis modi quos obcaecati. Repudiandae in doloremque molestias iusto amet. Expedita, id.
+                
+            </p>
+            <h3>Shahid Afridi</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                
+            </div>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="images/Glenn maxwell.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis modi quos obcaecati. Repudiandae in doloremque molestias iusto amet. Expedita, id.
+                
+            </p>
+            <h3>Glenn Maxwell</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                
+            </div>
+        </div>
+        <div class="swiper-slide box">
+            <img src="images/rohit sharma.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis modi quos obcaecati. Repudiandae in doloremque molestias iusto amet. Expedita, id.
+                
+            </p>
+            <h3>Rohit Sharma</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="swiper-pagination"></div>
+
+</div>
+</section>
+ 
+<!--Review section ends here-->
+
+<!--Blog Section Starts here-->
+<section class="blogs" id="blogs">
+    <h1 class="heading">Our <span>Blogs</span></h1>
+    <div class="container">
+        <div class="box">
+            <img src="images/blog1.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href=""><i class="fa fa-user">  By User</i></a>
+                    <a href=""><i class="fa fa-user">  1st June ,2024</i></a>
+                </div>
+                <h3>Fresh And Organic Vegetables And Fruits</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est tempora asperiores necessitatibus rerum ullam dolor ea placeat architecto accusantium culpa?
+
+                </p>
+                <a href="#" class="btn">Read More</a>
+
+            </div>
+        </div>
+            <div class="box">
+                <img src="images/blog2.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href=""><i class="fa fa-user">  By User</i></a>
+                        <a href=""><i class="fa fa-user">  1st June ,2024</i></a>
+                    </div>
+                    <h3>Fresh And Organic Vegetables And Fruits</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est tempora asperiores necessitatibus rerum ullam dolor ea placeat architecto accusantium culpa?
+    
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+    
+                </div>
+
+            </div>
+                <div class="box">
+                    <img src="images/blog3.jpg" alt="">
+                    <div class="content">
+                        <div class="icons">
+                            <a href=""><i class="fa fa-user">  By User</i></a>
+                            <a href=""><i class="fa fa-user">  1st June ,2024</i></a>
+                        </div>
+                        <h3>Fresh And Organic Vegetables And Fruits</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est tempora asperiores necessitatibus rerum ullam dolor ea placeat architecto accusantium culpa?
+        
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+        
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</section>
+<!--Blog Section ends here-->
+
+
+</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>  
+</body>
+</html>
